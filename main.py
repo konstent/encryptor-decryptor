@@ -30,7 +30,7 @@ def encryption():
     user_os_list = user_os.split("-")
     updated_user_os = user_os_list[0]
     if updated_user_os == 'Windows':
-        print("Win User")
+        print("Windows User")
         user_file = str(input("Enter your file path: "))
         location = user_file.split("\\")
         location2 = location[0]
