@@ -38,7 +38,7 @@ def encryption():
         location.pop(no_of_element - 1)
         location.pop(0)
         updated_location = str(location2+"\\"+"\\".join(location)+"\\")
-        print("Your encrypted file and encryption key will save at this location --> "+updated_location+)
+        print("Your encrypted file and encryption key will save at this location --> "+updated_location)
     else:
         print("Linux User")
         user_file = str(input("Enter your file path: "))
@@ -47,7 +47,7 @@ def encryption():
         location.pop(no_of_element - 1)
         location.pop(0)
         updated_location = str("/"+"/".join(location)+"/")
-        print("Your encrypted file and encryption key will save at this location --> "+updated_location+)
+        print("Your encrypted file and encryption key will save at this location --> "+updated_location)
     key = Fernet.generate_key()
     key_file = os.path.join(updated_location, "enc_key.key")
     with open(key_file, 'wb') as filekey:
